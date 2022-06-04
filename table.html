@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+</head>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    table{
+        position: absolute;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        border-collapse: collapse;
+        height: 200;
+        border: 1px solid #bdc3c7;
+        box-shadow:  2px 2px 12 px rgba(0,0,0, 0.2),-1px -1px 8px rgba(0,0,0, 0.2);
+    }
+    tr{
+        transition: all .2s ease-in;
+        cursor: pointer;
+    }
+    th,td{
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    #header{
+        background-color: #16a085;
+        color: #fff;
+    }
+    h1{
+        font-size: 600;
+        text-align: center;
+        background-color: #16a085;
+        color: #fff;
+        padding: 10px 0px;
+    }
+    tr:hover{
+        background-color: #f5f5f5;
+        transform: scale(1.02);
+        box-shadow:  2px 2px 12 px rgba(0,0,0, 0.2),-1px -1px 8px rgba(0,0,0, 0.2);
+    }
+    @media only screen and(max-width:768px){
+        table{
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+</style>
+<body>
+    <h1>Responsive Table</h1>
+    <hr>
+    <table>
+        <tr id="header">
+            <th>S.NO</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Blood Group</th>
+            
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ashraful</td>
+            <td>21</td>
+            <td>B+</td>
+           
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Umit</td>
+            <td>21</td>
+            <td>O+</td>
+           
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Akib</td>
+            <td>21</td>
+            <td>A+</td>
+            
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Monna</td>
+            <td>21</td>
+            <td>B+</td>
+        
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Ashfakul</td>
+            <td>21</td>
+            <td>B+</td>
+           
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Shaudho</td>
+            <td>21</td>
+            <td>O+</td>
+
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Sohel</td>
+            <td>21</td>
+            <td>B+</td>
+            
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Shrawman</td>
+            <td>21</td>
+            <td>AB-</td>
+           
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Nayon</td>
+            <td>21</td>
+            <td>B+</td>
+           
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Anik</td>
+            <td>21</td>
+            <td>AB+</td>
+            
+        </tr>
+    </table>
+</body>
+</html>
